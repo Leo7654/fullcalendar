@@ -250,7 +250,9 @@ DayGrid.mixin({
 				_this.segPopover.removeElement();
 				_this.segPopover = null;
 				_this.popoverSegs = null;
-			}
+			},
+			dayPopoverDraggable: view.opt('dayPopoverDraggable'),
+			dayPopoverResizable: view.opt('dayPopoverResizable')
 		};
 
 		// Determine horizontal coordinate.
