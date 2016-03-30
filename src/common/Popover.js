@@ -65,7 +65,12 @@ var Popover = Class.extend({
 			})
 			.append(options.content)
 			.appendTo(options.parentEl);
-
+		if (options.dayPopoverDraggable) {
+			this.el.draggable({handle:'.fc-header', cursor: 'move'});
+		}
+		if (options.dayPopoverResizable) {
+			this.el.resizable({ grid: [ 20, 0 ], maxHeight:this.el.height(), minHeight:this.el.height()});
+		}
 		// when a click happens on anything inside with a 'fc-close' className, hide the popover
 		this.el.on('click', '.fc-close', function() {
 			_this.hide();
