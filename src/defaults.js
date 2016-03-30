@@ -85,6 +85,8 @@ Calendar.defaults = {
 	eventLimitText: 'more',
 	eventLimitClick: 'popover',
 	dayPopoverFormat: 'LL',
+	dayPopoverDraggable: false,
+	dayPopoverResizable: false,
 	
 	handleWindowResize: true,
 	windowResizeDelay: 200 // milliseconds before an updateSize happens
